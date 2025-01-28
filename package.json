@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "CollaDraw",
   "private": true,
   "scripts": {
     "build": "turbo build",
