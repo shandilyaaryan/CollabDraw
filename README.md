@@ -1,84 +1,69 @@
-# Turborepo starter
+# CollabDraw
 
-This Turborepo starter is maintained by the Turborepo core team.
+CollabDraw is a real-time collaborative drawing application, similar to Excalidraw, that allows multiple users to work together seamlessly. Built with a modern tech stack, it ensures smooth performance and efficient real-time communication.
 
-## Using this example
+## Features
 
-Run the following command:
+- 🎨 **Real-time Collaboration** – Multiple users can draw and edit simultaneously.
+- 🔄 **WebSocket-based Syncing** – Instant updates for a seamless experience.
+- 🏗 **Scalable Architecture** – Built with Next.js, TurboRepo, and Express for efficient performance.
+- 💾 **PostgreSQL Database** – Reliable storage for user data and drawings.
+- ⚡ **Optimized Performance** – TurboRepo ensures efficient monorepo management.
 
-```sh
-npx create-turbo@latest
-```
+## Tech Stack
 
-## What's inside?
+- **Frontend:** Next.js (React framework)
+- **Backend:** Express.js
+- **Database:** PostgreSQL
+- **Real-time Communication:** WebSockets
+- **Monorepo Management:** TurboRepo
 
-This Turborepo includes the following packages/apps:
+## Installation
 
-### Apps and Packages
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/collabdraw.git
+   cd collabdraw
+   ```
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+2. **Install dependencies:**
+   ```sh
+   pnpm install
+   ```
+   > Ensure you have `pnpm` installed. You can also use `npm` or `yarn`. [Installation Guide](https://pnpm.io/installation)
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+3. **Set up environment variables:**
+   Create a `.env` file in the root directory and configure the following:
+   ```env
+   DATABASE_URL=postgresql://user:password@localhost:5432/collabdraw
+   WEBSOCKET_PORT=3001
+   NEXT_PUBLIC_API_URL=http://localhost:3001
+   ```
 
-### Utilities
+4. **Run the development server:**
+   ```sh
+   pnpm dev
+   ```
 
-This Turborepo has some additional tools already setup for you:
+5. **Start the backend server:**
+   ```sh
+   pnpm server
+   ```
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## Usage
 
-### Build
+- Open `http://localhost:3000` in your browser.
+- Start drawing and invite collaborators!
+- Changes sync in real-time via WebSockets.
 
-To build all apps and packages, run the following command:
+## Contributing
 
-```
-cd my-turborepo
-pnpm build
-```
+Contributions are welcome! Please check out the [Contributing Guidelines](CONTRIBUTING.md) before submitting a pull request.
 
-### Develop
+## License
 
-To develop all apps and packages, run the following command:
+This project is licensed under the MIT License.
 
-```
-cd my-turborepo
-pnpm dev
-```
+---
 
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+🚀 **CollabDraw** – Empowering creativity through real-time collaboration! If you like this project, consider starring it on GitHub!
