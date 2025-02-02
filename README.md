@@ -1,4 +1,4 @@
-# CollabDraw
+# CollabDraw (WIP 👷)
 
 CollabDraw is a real-time collaborative drawing application, similar to Excalidraw, that allows multiple users to work together seamlessly. Built with a modern tech stack, it ensures smooth performance and efficient real-time communication.
 
