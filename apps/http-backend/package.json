@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b",
+    "start": "tsc -b && node dist/index.js",
+    "dev": "tsc -b && node dist/index.js"
   },
   "dependencies": {
-    "@repo/typescript-config": "workspace:*"  
+    "@repo/typescript-config": "workspace:*",
+    "express": "^4.21.2"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
 }
